@@ -23,7 +23,7 @@ file:
   image-path: c:/temp/image
   max-file-size: 5242880 #5MB
   server-port: 6435
-  server-host: localhost
+  server-host: 172.29.19.79
 
 project:
   controller:
