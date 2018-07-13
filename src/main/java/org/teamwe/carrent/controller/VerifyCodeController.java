@@ -54,9 +54,6 @@ public class VerifyCodeController {
     @GetMapping("/validate")
     public Format genCode(HttpSession session) {
         Object o = session.getAttribute(VerifyCodeImage.TIME);
-        if (o != null && System.currentTimeMillis() - (long) o < interval) {
-            return new Format().code(ReturnStatus.FAILURE).message(StringUtil.REQUEST_TOO_FREQUENTLY);
-        }
 
         String code;
         try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
