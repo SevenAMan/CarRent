@@ -14,6 +14,8 @@ spring:
       redis:
         host: v4bug.com
         password: teampass
+server:
+      port: 8456
 hello:
       myname: bwy
 mybatis:
