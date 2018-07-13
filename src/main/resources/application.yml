@@ -15,7 +15,7 @@ spring:
         host: v4bug.com
         password: teampass
 server:
-      port: 8456
+      port: 8777
 hello:
       myname: bwy
 mybatis:
